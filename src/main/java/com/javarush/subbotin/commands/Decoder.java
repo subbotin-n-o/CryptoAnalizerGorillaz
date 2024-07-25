@@ -1,9 +1,11 @@
 package com.javarush.subbotin.commands;
 
-public class Decoder implements AutoCloseable {
+import com.javarush.subbotin.entity.Result;
+
+public class Decoder implements Action {
 
     @Override
-    public void close() throws Exception {
-
+    public Result execute(String[] parameters) {
+        return null;
     }
 }
