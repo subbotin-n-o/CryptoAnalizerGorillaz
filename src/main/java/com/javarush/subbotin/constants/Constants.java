@@ -1,5 +1,7 @@
 package com.javarush.subbotin.constants;
 
+import java.io.File;
+
 public class Constants {
 
     private static final String RUS = "АБВГДЕËЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
@@ -8,5 +10,7 @@ public class Constants {
     private static final String PUNCTUATION_MARKS = "!@#$%^&*(){}[]:;";
 
     public static final String ALPHABET = RUS + RUS.toLowerCase() + ENG + ENG.toLowerCase() + CYPHER + PUNCTUATION_MARKS;
+
+    public static final String TXT_FOLDER = System.getProperty("user.dir") + File.separator + "text" + File.separator;
 
 }
