@@ -1,4 +1,4 @@
-package com.javarush.subbotin.exceptions;
+package com.javarush.subbotin.exception;
 
 public class AppException extends RuntimeException {
 

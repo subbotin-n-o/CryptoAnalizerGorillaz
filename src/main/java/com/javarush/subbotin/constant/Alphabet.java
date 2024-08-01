@@ -1,10 +1,11 @@
-package com.javarush.subbotin.constants;
+package com.javarush.subbotin.constant;
 
 import java.io.File;
 
-public class Constants {
+public class Alphabet {
 
     private static final String RUS = "АБВГДЕËЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+
     private static final String ENG = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String CYPHER = "0123456789";
     private static final String PUNCTUATION_MARKS = "!@#$%^&*(){}[]:;";

@@ -1,9 +1,9 @@
-package com.javarush.subbotin.controllers;
+package com.javarush.subbotin.controller;
 
-import com.javarush.subbotin.commands.Action;
-import com.javarush.subbotin.commands.Decoder;
-import com.javarush.subbotin.commands.Encoder;
-import com.javarush.subbotin.exceptions.AppException;
+import com.javarush.subbotin.command.Action;
+import com.javarush.subbotin.command.Decoder;
+import com.javarush.subbotin.command.Encoder;
+import com.javarush.subbotin.exception.AppException;
 
 public enum Actions {
     ENCODE(new Encoder()),

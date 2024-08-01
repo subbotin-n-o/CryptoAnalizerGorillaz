@@ -2,13 +2,12 @@ package com.javarush.subbotin.entity;
 
 public class Result {
 
-    private final String message;
+    public final String message;
+    public final ResultCode resultCode;
 
-    private final ResultCode resultCode;
-
-    public Result(String message, ResultCode resultCode) {
-        this.message = message;
+    public Result(ResultCode resultCode, String message) {
         this.resultCode = resultCode;
+        this.message = message;
     }
 
     @Override

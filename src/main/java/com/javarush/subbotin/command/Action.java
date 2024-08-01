@@ -1,4 +1,4 @@
-package com.javarush.subbotin.commands;
+package com.javarush.subbotin.command;
 
 import com.javarush.subbotin.entity.Result;
 
