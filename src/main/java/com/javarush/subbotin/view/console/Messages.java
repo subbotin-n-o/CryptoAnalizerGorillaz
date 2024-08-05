@@ -1,24 +1,24 @@
 package com.javarush.subbotin.view.console;
 
-import com.javarush.khmelov.constant.Const;
+import static com.javarush.subbotin.constant.Const.*;
 
 public interface Messages {
 
     String[][][] QUESTIONS = new String[][][]{
             {
-                    {Const.ENCODE},
+                    {ENCODE},
                     {"Enter source (full path OR only filename OR Enter for text.txt) :", "text.txt"},
                     {"Enter destination (full path OR only filename OR Enter for encrypted.txt) :", "encrypted.txt"},
                     {"Enter key (int number OR Enter for key=1) :", "1"},
             },
             {
-                    {Const.DECODE},
+                    {DECODE},
                     {"Enter source (full path OR only filename OR Enter for encrypted.txt) :", "encrypted.txt"},
                     {"Enter destination (full path OR only filename OR Enter for decrypted.txt) :", "decrypted.txt"},
                     {"Enter key (int number OR Enter for key=1) :", "1"},
             },
             {
-                    {"Exit"},
+                    {EXIT},
             }
     };
 
