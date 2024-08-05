@@ -10,4 +10,6 @@ public interface Const {
             File.separator +
             "text" +
             File.separator;
+
+    String INCORRECT_FILE = "Incorrect file: ";
 }
