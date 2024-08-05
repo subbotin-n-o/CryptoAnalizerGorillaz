@@ -5,6 +5,8 @@ import com.javarush.subbotin.command.Decoder;
 import com.javarush.subbotin.command.Encoder;
 import com.javarush.subbotin.exception.AppException;
 
+import static com.javarush.subbotin.constant.Const.NOT_FOUND_ACTION_FORMAT;
+
 public enum Actions {
     ENCODE(new Encoder()),
     DECODE(new Decoder());
@@ -20,7 +22,8 @@ public enum Actions {
             Actions value = Actions.valueOf(actionName.toUpperCase());
             return value.action;
         } catch (IllegalArgumentException e) {
-            throw new AppException("not found " + actionName, e);
+            String message = String.format(NOT_FOUND_ACTION_FORMAT, actionName);
+            throw new AppException(message, e);
         }
     }
 }
