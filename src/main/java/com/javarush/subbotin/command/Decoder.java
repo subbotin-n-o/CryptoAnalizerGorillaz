@@ -2,12 +2,13 @@ package com.javarush.subbotin.command;
 
 import com.javarush.subbotin.entity.Result;
 
-public class Decoder implements Action {
+public class Decoder extends AbstractAction {
 
     @Override
     public Result execute(String[] parameters) {
-        //TODO something do
-//        return new Result("decode all right", ResultCode.OK);
-        return null;
+        String sourceTextFile = parameters[0];
+        String targetTextFile = parameters[1];
+        int keyCode = Integer.parseInt(parameters[2]);
+        return copyWithKey(sourceTextFile, targetTextFile, keyCode);
     }
 }
