@@ -1,17 +1,23 @@
 package com.javarush.subbotin.constant;
 
-import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Alphabet {
 
-    private static final String RUS = "АБВГДЕËЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+    private Alphabet() {
+    }
 
-    private static final String ENG = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private static final String CYPHER = "0123456789";
+    private static final String RUS = "АБВГДЕËЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
     private static final String PUNCTUATION_MARKS = "!@#$%^&*(){}[]:;";
 
-    public static final String ALPHABET = RUS + RUS.toLowerCase() + ENG + ENG.toLowerCase() + CYPHER + PUNCTUATION_MARKS;
+    public static final char[] ALPHABET = (RUS.toLowerCase() + PUNCTUATION_MARKS).toCharArray();
 
-    public static final String TXT_FOLDER = System.getProperty("user.dir") + File.separator + "text" + File.separator;
+    public final static Map<Character, Integer> index = new HashMap<>();
 
+    static {
+        for (int i = 0; i < ALPHABET.length; i++) {
+            index.put(ALPHABET[i], i);
+        }
+    }
 }
