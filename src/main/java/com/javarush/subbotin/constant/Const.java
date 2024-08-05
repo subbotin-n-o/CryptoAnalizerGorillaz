@@ -5,6 +5,7 @@ import java.io.File;
 public interface Const {
     String ENCODE = "encode";
     String DECODE = "decode";
+    String EXIT = "exit";
 
     String TXT_FOLDER = System.getProperty("user.dir") +
             File.separator +
