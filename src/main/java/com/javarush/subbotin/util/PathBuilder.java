@@ -1,8 +1,8 @@
 package com.javarush.subbotin.util;
 
-import com.javarush.subbotin.constant.Const;
-
 import java.nio.file.Path;
+
+import static com.javarush.subbotin.constant.Const.TXT_FOLDER;
 
 public class PathBuilder {
 
@@ -13,6 +13,6 @@ public class PathBuilder {
         Path path = Path.of(filename);
         return path.isAbsolute()
                 ? path
-                : Path.of(Const.TXT_FOLDER);
+                : Path.of(TXT_FOLDER + filename);
     }
 }
