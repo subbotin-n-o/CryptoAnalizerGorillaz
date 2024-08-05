@@ -33,12 +33,12 @@ public class Menu {
         do {
             System.out.println("1. Encrypt");
             System.out.println("2. Decrypt");
-            System.out.println("5. Exit");
+            System.out.println("3. Exit");
             String input = scanner.nextLine();
             mode = switch (input) {
-                case "1" -> 1;
-                case "2" -> 2;
-                case "3" -> 3;
+                case "1" -> 0;
+                case "2" -> 1;
+                case "3" -> 2;
                 default -> {
                     System.out.println(INCORRECT_SELECTION);
                     yield -1;
