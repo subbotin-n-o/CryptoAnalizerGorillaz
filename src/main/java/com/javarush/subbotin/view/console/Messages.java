@@ -22,6 +22,8 @@ public interface Messages {
             }
     };
 
+    String INCORRECT_SELECTION = "Incorrect selection";
+
     String OK_FORMAT = """
                 Operation complete
                 Result: %s
