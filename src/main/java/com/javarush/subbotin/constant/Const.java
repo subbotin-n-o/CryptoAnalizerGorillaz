@@ -11,5 +11,7 @@ public interface Const {
             "text" +
             File.separator;
 
+    String NOT_FOUND_ACTION_FORMAT = "not found action: %s";
     String INCORRECT_FILE = "Incorrect file: ";
+    String APPLICATION_CLOSED = "application closed";
 }
