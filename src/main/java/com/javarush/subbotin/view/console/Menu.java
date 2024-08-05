@@ -2,11 +2,12 @@ package com.javarush.subbotin.view.console;
 
 import java.util.Scanner;
 
+import static com.javarush.subbotin.view.console.Messages.INCORRECT_SELECTION;
 import static com.javarush.subbotin.view.console.Messages.QUESTIONS;
 
 public class Menu {
 
-private final Scanner scanner;
+    private final Scanner scanner;
 
     public Menu(Scanner scanner) {
         this.scanner = scanner;
@@ -39,7 +40,7 @@ private final Scanner scanner;
                 case "2" -> 2;
                 case "3" -> 3;
                 default -> {
-                    System.out.println("Incorrect selection");
+                    System.out.println(INCORRECT_SELECTION);
                     yield -1;
                 }
             };
